@@ -69,7 +69,38 @@
 			<h2 class="visually-hidden">Поиск гостиницы</h2>
 			<p>Заинтересовались?</p>
 			<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			<button class="search-hotels">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+			<form class="search-hotels">
+				<button class="search-hotels-in-sedona">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+				<p>
+					<label>Дата заезда:
+						<input type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+					</label>
+				</p>
+				<p>
+					<label>Дата выезда:
+						<input type="text" name="date-of-departure" value="" placeholder="4 июля 2017">
+					</label>
+				</p>
+				<p>
+					<label>Взрослые:
+						<form>
+							<button name="minus">-</button>
+							<input type="number" name="adults" min="1" value="2">
+							<button name="plus">+</button>
+						</form>
+					</label>
+				</p>
+				<p>
+					<label>Дети:
+						<form>
+							<button name="minus">-</button>
+							<input type="number" name="children" min="0" value="0">
+							<button name="plus">+</button>
+						</form>
+					</label>
+				</p>
+				<button type="submit">Найти</button>
+			</form>
 		</section>
 	</main>
 	<footer class="main-footer">
