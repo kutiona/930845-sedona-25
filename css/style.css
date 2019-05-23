@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  color: #766357;
+}
+
+.site-navigation a:active {
+  color: #000000;
+  opacity: .3;
+}
+
+.recommendations-list {
+  list-style: none;
+}
+
+.recommendations-list,
+.reasons-list,
+p {
+  text-align: center;
+  font-weight: 400;
+}
+
+.recommendations-list h3,
+.reasons-list h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+div {
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+.recommendations-list  {
+	background-color: #ffffff;
+	color: #333333;
+}
+
+.search-hotels-in-sedona {
+	font: inherit;
+
+	font-size: 21px;
+  	line-height: 26px;
+ 	font-weight: 700;
+ 	text-transform: uppercase;
+
+	color: #ffffff;
+	background-color: #766357;
+}
+
+label,
+input {
+	font-weight: 700;
+ }
+
+.button-search {
+	font: inherit;
+
+	font-size: 21px;
+  	line-height: 26px;
+ 	font-weight: 700;
+ 	text-transform: uppercase;
+
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+h2+p {
+	font-size: 30px;
+  	line-height: 36px;
+}
+
+.main-footer {
+  color: #000000;
+
+  background-color: #ffffff;
+ 
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.social-button {
+	text-decoration: none;
+	}
+
+.footer-social {
+	list-style: none;
+}
+

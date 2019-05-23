@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet"
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 	<header class="main-header">
@@ -23,17 +26,32 @@
 		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 		<section class="reasons">
 			<h2 class="visually-hidden">Причины</h2>
-			<ul class="reasons-list">
-				<li class="real-town">
-					<h3>Настоящий городок</h3>
-					<img src="img/real-town.jpg" alt="Настоящий городок">
+			<ol class="reasons-list">
+				<div><li class="real-town">
+					<h3>Настоящий городок</h3>					
 					<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-				</li>
-				<li class="devils-bridge">
-					<h3>Там есть<br> Мост дьявола</h3>
-					<img src="img/devils-bridge.jpg" alt="Мост дьявола">
-					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-				</li>
+					<img src="img/real-town.jpg" alt="Настоящий городок">
+						<ul class="recommendations-list">
+							<li class="housing">
+								<h3>Жилье</h3>
+								<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+							</li>
+							<li class="food">
+								<h3>Еда</h3>
+								<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+							</li>
+							<li class="souvenirs">
+								<h3> Сувениры</h3>
+								<p>Не только китайского, но и местного производства!</p>
+							</li>			
+						</ul>
+					</li>
+					<li class="devils-bridge">
+						<h3>Там есть<br> Мост дьявола</h3>
+						<img src="img/devils-bridge.jpg" alt="Мост дьявола">
+						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					</li>
+				</div>
 				<li class="small-area">
 					<h3>Небольшая площадь</h3>
 					<p>Все достопримечательности находятся очень близко</p>
@@ -46,24 +64,7 @@
 					<h3>Мало туристов</h3>
 					<p>Большинство едет в гранд каньон и толпится там</p>
 				</li>		
-			</ul>
-		</section>
-		<section class="recommendations">
-			<h2 class="visually-hidden">Рекомендации</h2>
-			<ul class="recommendations-list">
-				<li class="housing">
-					<h3>Жилье</h3>
-					<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-				</li>
-				<li class="food">
-					<h3>Еда</h3>
-					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-				</li>
-				<li class="souvenirs">
-					<h3> Сувениры</h3>
-					<p>Не только китайского, но и местного производства!</p>
-				</li>			
-			</ul>
+			</ol>
 		</section>
 		<section class="search">
 			<h2 class="visually-hidden">Поиск гостиницы</h2>
@@ -83,25 +84,25 @@
 						</label>
 					</p>
 					<p>
-						<button name="minus">-</button>
 						<label for="adults-input">Взрослые:</label>
+						<button name="minus">-</button>
 						<input type="number" name="adults" id="adults-input" min="1" value="2">
 						<button name="plus">+</button>
 					</p>
 					<p>
-						<button name="minus">-</button>
 						<label for="children-input">Дети:</label>
+						<button name="minus">-</button>
 						<input type="number" name="children" id="children-input" min="0" value="0">
 						<button name="plus">+</button>
 					</p>
-					<button type="submit">Найти</button>
+					<button class="button-search" type="submit">Найти</button>
 			</form>
 		</section>
 	</main>
 	<footer class="main-footer">
 		<span>#visitSEDONA</span>
-		<div class=footer-social>
-			<ul>
+		<div>
+			<ul class=footer-social>
 				<li><a class="social-button" href="#">Твиттер</a></li>
 				<li><a class="social-button" href="#">Фэйсбук</a></li>
 				<li><a class="social-button" href="#">Ютуб</a></li>
