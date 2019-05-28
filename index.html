@@ -11,7 +11,7 @@
   	<div class="wrapper">
 		<header class="main-header">
 			<nav class="main-navigation">
-				<img src="img/logo.svg" width="100" height="50" alt="Седона">
+				<img src="img/logo.svg" class="main-header-logo" width="100" height="50" alt="Седона">
 				<ul class="site-navigation">
 					<li> <a href="info.html">Информация</a></li>
 					<li> <a href="foto-video.html">Фото и видео</a></li>
@@ -22,48 +22,52 @@
 		</header>
 		<main>
 			<h1 class="visually-hidden">Седонa - город в Аризоне</h1>
-				<div class="welcome"><img src="img/welcome.png" alt="Добро пожаловать"></div>		
-			<p class="sedona">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-			<section class="reasons">
+			<div class="welcome">
+				<img src="img/welcome.png" class="welcome-title" alt="Добро пожаловать">		
+			</div>
+			<div class="sedona-reasons">
+				<p class="sedona">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+				<p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+			</div>
+				<section class="reasons">
 				<h2 class="visually-hidden">Причины</h2>
 				<ol class="reasons-list">
 					<div class="reasons-1-2">
-						<li class="real-town">
+						<li class="reason-1">
 						<h3>Настоящий городок</h3>					
 						<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 						<img src="img/real-town.jpg" alt="Настоящий городок">
 							<ul class="recommendations-list">
-								<li class="housing">
+								<li class="recommendation">
 									<h3>Жилье</h3>
 									<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 								</li>
-								<li class="food">
+								<li class="recommendation">
 									<h3>Еда</h3>
 									<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 								</li>
-								<li class="souvenirs">
+								<li class="recommendation">
 									<h3> Сувениры</h3>
 									<p>Не только китайского, но и местного производства!</p>
 								</li>			
 							</ul>
 						</li>
-						<li class="devils-bridge">
-							<h3>Там есть<br> Мост дьявола</h3>
+						<li class="reason-2">
 							<img src="img/devils-bridge.jpg" alt="Мост дьявола">
+							<h3>Там есть<br> Мост дьявола</h3>
 							<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 						</li>
 					</div>
 					<div class="reasons-3-4-5">
-						<li class="small-area">
+						<li class="reason-3">
 							<h3>Небольшая площадь</h3>
 							<p>Все достопримечательности находятся очень близко</p>
 						</li>
-						<li class="beautiful-road">
+						<li class="reason-4">
 							<h3>Красивая дорога</h3>
 							<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 						</li>
-						<li class="few-of-tourists">
+						<li class="reason-5">
 							<h3>Мало туристов</h3>
 							<p>Большинство едет в гранд каньон и толпится там</p>
 						</li>
@@ -72,50 +76,53 @@
 			</section>
 			<section class="search">
 				<h2 class="visually-hidden">Поиск гостиницы</h2>
-				<p>Заинтересовались?</p>
-				<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-				
+				<div class="interested-block">
+					<p class="interested">Заинтересовались?</p>
+					<p class="date">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 					<button class="search-hotels-in-sedona">Поиск гостиницы в Седоне</button>
-					<form class="search-hotels">
-						<p>
-							<label>Дата заезда:
-								<input type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
-							</label>
-						</p>
-						<p>
-							<label>Дата выезда:
-								<input type="text" name="date-of-departure" value="" placeholder="4 июля 2017">
-							</label>
-						</p>
-						<p>
-							<label for="adults-input">Взрослые:</label>
-							<button name="minus">-</button>
-							<input type="number" name="adults" id="adults-input" min="1" value="2">
-							<button name="plus">+</button>
-						</p>
-						<p>
-							<label for="children-input">Дети:</label>
-							<button name="minus">-</button>
-							<input type="number" name="children" id="children-input" min="0" value="0">
-							<button name="plus">+</button>
-						</p>
-						<button class="button-search" type="submit">Найти</button>
-					</form>
+				</div>
+				<form class="search-hotels">
+					
+						<label>Дата заезда:
+							<input type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+						</label>
+					
+					
+						<label>Дата выезда:
+							<input type="text" name="date-of-departure" value="" placeholder="4 июля 2017">
+						</label>
+					
+					<p>
+						<label for="adults-input">Взрослые:</label>
+						<button name="minus">-</button>
+						<input type="number" name="adults" id="adults-input" min="1" value="2">
+						<button name="plus">+</button>
+					</p>
+					<p>
+						<label for="children-input">Дети:</label>
+						<button name="minus">-</button>
+						<input type="number" name="children" id="children-input" min="0" value="0">
+						<button name="plus">+</button>
+					</p>
+					<button class="button-search" type="submit">Найти</button>
+				</form>
 			</section>
 		</main>
 		<footer class="main-footer">
-			<span>#visitSEDONA</span>
-			<div>
-				<ul class="footer-social">
-					<li><a class="social-button" href="#">Твиттер</a></li>
-					<li><a class="social-button" href="#">Фэйсбук</a></li>
-					<li><a class="social-button" href="#">Ютуб</a></li>
-				</ul>
+			<div class="container">
+				<span>#visitSEDONA</span>
+				<div>
+					<ul class="footer-social">
+						<li><a class="social-button" href="#">Твиттер</a></li>
+						<li><a class="social-button" href="#">Фэйсбук</a></li>
+						<li><a class="social-button" href="#">Ютуб</a></li>
+					</ul>
+				</div>
+				<p class="footer-copyright">
+					Website by
+					<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-name.svg" width="100" height="50" alt="htmlacademy"></a>
+				</p>
 			</div>
-			<p class="footer-copyright">
-				Website by
-				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-name.svg" width="100" height="50" alt="htmlacademy"></a>
-			</p>
 		</footer>
 		</div>
 	</body>

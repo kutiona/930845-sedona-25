@@ -4,6 +4,8 @@ body {
 .wrapper {
   margin: 0;
   padding: 0;
+  width: 1200px;
+  margin: 0 auto;
 
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
@@ -18,7 +20,6 @@ body {
 .welcome {
 	background: url("../img/polygon.svg") no-repeat bottom,
 				url("../img/background-photo.jpg") no-repeat center;
-	text-align: center;
 }
 
 a {
@@ -53,6 +54,8 @@ a {
 }
 
 .sedona {
+	font-size: 21px;
+	line-height: 26px;
 	font-weight: 700;
 }
 
@@ -151,7 +154,7 @@ input:hover {
 	background-color: #5496bd;
 }
 
-h2+p {
+.interested {
 	font-size: 30px;
   	line-height: 36px;
   	font-weight: 700;
@@ -224,5 +227,182 @@ h2+p {
  .star {
  	color: #81b3d2;
  }
+ 
+h1,
+h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.main-navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-header-logo {
+	width: 140px;
+	height: 70px;
+	order: 2;
+	margin-top: 0;
+}
+
+.site-navigation {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.welcome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 65px;
+}
+
+.welcome-title {
+	margin-bottom: 80px;
+	margin-top: 75px;
+	margin-left: 370px;
+	margin-right: 370px;
+}
+
+p {
+	margin: 0;
+  	padding: 0;
+}
+
+.sedona-reasons {
+	display: flex;
+	flex-direction: column;
+}
+
+.sedona {
+	margin-bottom: 32px;
+}
+
+.five-reasons {
+	margin-bottom: 55px;
+}
+
+.reasons {
+	margin: 0;
+	padding: 0;
+}
+
+.reasons-list {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0;
+	padding: 0;
+}
+
+.recommendations-list,
+.reasons-3-4-5 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 0;
+}
+
+.recommendation {
+	width: 304px;
+	height: 166px;
+	padding: 48px;
+}
+ 
+.reason-3,
+.reason-4,
+.reason-5 {
+	width: 304px;
+	height: 166px;
+	padding: 48px;
+}
+
+.recommendations-list {
+	margin-bottom: 55px;
+}
+
+.search {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0;
+	padding: 0;
+}
+
+.interested-block {
+	margin: 0 auto;	
+}
+
+.interested {
+	padding-bottom: 30px;
+}
+
+.date {
+	padding-bottom: 50px;
+}
+
+.search-hotels-in-sedona {
+	width: 568px;
+	padding-bottom: 33px;
+	padding-top: 33px;
+	border: 0;
+}
+
+.search-hotels {
+	display: flex;
+	flex-direction: column;
+
+	width: 568px;
+	padding: 55px;
+	margin: 0 auto;
+}
+
+
+
+input {
+	width: 345px;
+	height: 40px;
+	margin-bottom: 20px;	
+}
+
+label {
+	padding-left: 55px;
+}
+
+.button-search {
+	margin-top: 55px;
+	padding-bottom: 18px;
+	padding-top: 18px;
+	border: 0;
+}
+
+.container {
+	width: 1056px;
+	margin: 0 auto;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;	
+}
+
+span {
+	width: 240px;
+}
+
+.footer-social {
+	width: 400px;
+}
+
+.footer-copyright {
+	width: 240px;
+}
+
+
 
 
