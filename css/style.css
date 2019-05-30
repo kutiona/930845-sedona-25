@@ -7,7 +7,7 @@ body {
   width: 1200px;
   margin: 0 auto;
 
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -59,6 +59,17 @@ a {
 	font-weight: 700;
 }
 
+.reason-1,
+.reason-2 {
+	background-color: #81b3d2;
+}
+
+.reason-3,
+.reason-4,
+.reason-5 {
+	background-color: #eeeeee;
+}
+
 .recommendations-list {
   list-style: none;
 }
@@ -77,15 +88,6 @@ p {
   font-weight: 700;
 }
 
-.reasons-1-2 {
-	color: #ffffff;
-	background-color: #81b3d2;
-}
-
-.reasons-3-4-5 {
-	background-color: #f2f2f2;
-}
-
 .recommendations-list  {
 	color: #333333;
 	background-color: #ffffff;
@@ -93,7 +95,7 @@ p {
 
 .search-hotels-in-sedona,
 .button-reservation {
-	font: inherit;
+	
 
 	font-size: 21px;
   	line-height: 26px;
@@ -104,10 +106,13 @@ p {
 	background-color: #766357;
 }
 
+.button-reservation {
+	font-size: 14px;
+}
+
 .search-hotels-in-sedona:hover,
 .button-reservation:hover {
-  	color: #ffffff;
-	background-color: #604e43;
+  	background-color: #604e43;
 }
 
 .search-hotels-in-sedona:active,
@@ -134,8 +139,6 @@ input:hover {
  }
 
 .button-search {
-	font: inherit;
-
 	font-size: 21px;
   	line-height: 26px;
  	font-weight: 700;
@@ -189,7 +192,7 @@ input:hover {
 
 .social-button:active,
 .button-more:active {
-	color: rgba(255,255,255,0.3);v
+	color: #5496bd;
   color: #5496bd;
   }
 
@@ -198,7 +201,7 @@ input:hover {
  }
 
  .hotels-name,
- span {
+ .visitsedona {
  	font-size: 21px;
   	line-height: 26px;
  	font-weight: 700;
@@ -244,7 +247,6 @@ h2 {
 	width: 140px;
 	height: 70px;
 	order: 2;
-	margin-top: 0;
 }
 
 .site-navigation {
@@ -294,13 +296,13 @@ p {
 .reasons-list {
 	display: flex;
 	flex-direction: column;
+	list-style: none;
 
 	margin: 0;
 	padding: 0;
 }
 
-.recommendations-list,
-.reasons-3-4-5 {
+.recommendations-list {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -381,17 +383,24 @@ label {
 }
 
 .container {
-	width: 1056px;
-	margin: 0 auto;
-}
-
-.container {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 auto;	
+	align-items: center;
+	margin: 0 auto;
+	width: 1056px;
+	margin-top: 185px;
+
 }
 
-span {
+.container-inner-page {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	width: 1056px;
+	margin-top: 50px;
+}
+.visitsedona {
 	width: 240px;
 }
 
@@ -401,8 +410,58 @@ span {
 
 .footer-copyright {
 	width: 240px;
+	margin: 0;
+	padding: 0;
 }
 
+.hotels-container {
+	width: 1056px;
+	margin: 0 auto;
+}
 
+.hotels-list {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+}
+
+.hotel-wrapper {
+	display: flex;
+	border-bottom: solid 1px #e5e5e5;
+}
+
+.preview {
+	padding-bottom: 30px;
+	padding-top: 30px;
+	padding-right: 30px;
+}
+
+.button-more {
+	width: 110px;
+	height: 27px;
+	margin: 0;
+	border: 0;
+	text-align: center;
+}
+
+.button-reservation {
+	width: 142px;
+	height: 27px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: center;
+}
+
+.rating {
+	width: 112px;
+	height: 28px;
+	margin: 0;
+	padding: 0;
+	border: 0;	
+}
 
 
