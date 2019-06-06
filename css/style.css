@@ -391,6 +391,7 @@ p {
 
 .interested {
 	padding-bottom: 30px;
+	margin-top: 54px;
 }
 
 .date {
@@ -437,9 +438,8 @@ input {
 }
 
 .namber-of {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	display: block;
+	text-align: center;
 	padding:0;
 	width: 38px;
 	height: 38px;
