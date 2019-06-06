@@ -59,7 +59,7 @@ a {
   list-style: none;
 }
 
-.site-navigation a:not(.main-header-logo) {
+.site-navigation a {
 	display: block;
 	color: #000000;
 	vertical-align: middle;
@@ -84,8 +84,15 @@ a {
 }
 
 .main-header-logo {
-	margin-bottom: -30px;
+	display: flex;
+	width: 140px;
+	height: 70px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: -70px;	
 }
+
+
 
 .sedona-reasons {
 	background-color: #ffffff;
@@ -273,6 +280,8 @@ input:hover {
  }
 
  .star {
+ 	display: flex;
+ 	justify-content: flex-end;
  	color: #81b3d2;
  }
  
@@ -284,16 +293,10 @@ h2 {
 
 .main-navigation {
 	display: flex;
-}
-
-.main-header-logo {
-	width: 140px;
-	height: 70px;
-	order: 2;
+	flex-direction: column;
 }
 
 .site-navigation {
-	width: 1200px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -401,32 +404,114 @@ p {
 	border: 0;
 }
 
+.form-wrapper {
+	display: flex;
+	margin: 0 auto;	
+}
+
+
 .search-hotels {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
-	width: 568px;
+	width: 458px;
 	padding: 55px;
-	margin: 0 auto;
+	
 }
+
 
 
 
 input {
-	width: 345px;
+	width: 333px;
 	height: 40px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	padding-left: 12px;
+	
+
 	margin-bottom: 20px;	
 }
 
-label {
-	padding-left: 55px;
+.namber-of {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding:0;
+	width: 38px;
+	height: 38px;
+
 }
 
-.button-search {
-	margin-top: 55px;
-	padding-bottom: 18px;
-	padding-top: 18px;
+.button-plus,
+.button-minus {
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
 	border: 0;
+	width: 38px;
+	background-color: #f2f2f2;
+}
+
+label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	margin-right: 21px;
+	margin-bottom: 20px;
+	
+
+	
+}
+
+.adults-label,
+.children-label {
+	margin-bottom: 0;
+}
+
+.namber-wrap {
+	display: flex;
+	flex-direction: row;
+	height: 40px;
+}
+
+.number-adults,
+.number-children {
+	display: flex;
+	flex-direction: row;
+	width: 114px;
+	height: 38px;
+	margin: 0;
+	padding: 0;
+	margin-right: 53px; 
+}
+
+.number-children {
+	margin-right: 0;
+}
+
+.number-adults {
+	margin-left: 20px;
+}
+
+
+.button-search {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 58px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+
+	margin-top: 54px;
+	
 }
 
 .container {
@@ -504,11 +589,12 @@ label {
 }
 
 .rating {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 112px;
 	height: 28px;
-	margin: 0;
-	padding: 0;
-	border: 0;
+	
 }
 
 img {
@@ -537,17 +623,28 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  
+  
 
   margin: 0;
   padding: 0;
-
-  margin-left: 70px;
-  margin-right: 70px;
 }
 
-main {
-	margin-top: -23px;
+
+.site-navigation {
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
+.site-navigation li {
+	display: flex;
+	width: 25%;
+	
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+	justify-content: flex-end;
 }
 
 .filter-range {
@@ -704,7 +801,6 @@ main {
 .reason-wrapper {
 	width: 304px;
 	padding-top: 50px;
-	padding-bottom: 30px;
 	padding-left: 48px;
 	padding-right: 48px;
 }
@@ -752,6 +848,7 @@ a {
 }
 
 .preview {
+	display: block;
 	padding: 0;
 	margin: 0;
 	border: 0;
@@ -759,28 +856,34 @@ a {
 }
 
 .hotel-info {
+	height: 90px;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-
-
-	width: 258px;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: space-between;
+	
+	padding: 0;
+	margin: 0;
+	
 }
 
 .hotel-info h3 {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 12px;
 }
 
-.hotel-info p {
+.type-price p {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 15px;
+	text-align: left;
 	margin-right: 6px;
 	width: 110px;
-	text-align: left;
+}
 
+.type-price,
+.button-block {
+	display: flex;
+	flex-direction: row;
 }
 
 .button-more {
@@ -791,19 +894,18 @@ a {
 }
 
 .hotel-rating {
+	height: 90px;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
-	flex-grow: 1;
+	justify-content: space-between;
+	
 
 	padding: 0;
 	margin: 0;
 
 }
 
-.star {
-	padding-bottom: 47px
-}
+
 
 ul {
 	padding: 0;
@@ -866,9 +968,6 @@ ul {
 	flex-direction: row;
 	align-items: center;
 }
-
-
-
 
 
 

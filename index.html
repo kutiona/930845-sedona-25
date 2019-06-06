@@ -11,10 +11,10 @@
   	<div class="wrapper">
 		<header class="main-header">
 			<nav class="main-navigation">
+				<img src="img/logo.svg" class="main-header-logo" width="140" height="70" alt="Седона">
 				<ul class="site-navigation">
 					<li> <a href="info.html">Информация</a></li>
 					<li> <a href="foto-video.html">Фото и видео</a></li>
-					<li> <img src="img/logo.svg" class="main-header-logo" width="100" height="50" alt="Седона"> </li>
 					<li> <a href="mapstate.html">Карта штата</a></li>
 					<li> <a href="catalog.html">Гостиницы</a></li>
 				</ul>
@@ -86,31 +86,33 @@
 					<p class="date">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 					<button class="search-hotels-in-sedona">Поиск гостиницы в Седоне</button>
 				</div>
-				<form class="search-hotels">
-					
-						<label>Дата заезда:
-							<input type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
-						</label>
-					
-					
-						<label>Дата выезда:
-							<input type="text" name="date-of-departure" value="" placeholder="4 июля 2017">
-						</label>
-					
-					<p>
-						<label for="adults-input">Взрослые:</label>
-						<button name="minus">-</button>
-						<input type="number" name="adults" id="adults-input" min="1" value="2">
-						<button name="plus">+</button>
-					</p>
-					<p>
-						<label for="children-input">Дети:</label>
-						<button name="minus">-</button>
-						<input type="number" name="children" id="children-input" min="0" value="0">
-						<button name="plus">+</button>
-					</p>
-					<button class="button-search" type="submit">Найти</button>
-				</form>
+				<div class="form-wrapper">
+					<form class="search-hotels">
+						
+							<label for="arrival-date-input">Дата заезда:</label>
+								<input type="text" name="arrival-date" id="arrival-date-input" value="" placeholder="24 апреля 2017">					
+							<label for="date-of-departure-input">Дата выезда:</label>
+								<input type="text" name="date-of-departure" id="date-of-departure-input" value="" placeholder="4 июля 2017">					
+						<div class="namber-wrap">
+							<label class="adults-label" for="adults-input">Взрослые:</label>
+							<div class="number-adults">
+								<button class="button-minus" name="minus">-</button>
+								<input type="namber" class="namber-of" name="adults" id="adults-input" value="" placeholder="2">
+								<button class="button-plus" name="plus">+</button>
+							</div>
+						</div>
+						<div class="namber-wrap">
+							<label class="children-label" for="children-input">Дети:</label>
+							<div class="number-children">
+								<button class="button-minus" name="minus">-</button>
+								<input class="namber-of" name="children" id="children-input" value="0">
+								<button class="button-plus" name="plus">+</button>
+							</div>
+						</div>						
+							<button class="button-search" type="submit">Найти</button>
+						
+					</form>
+				</div>
 			</section>
 		</main>
 		<footer class="main-footer">
