@@ -47,6 +47,7 @@ a {
 }
 
 .main-navigation {
+	position: relative;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
@@ -84,12 +85,10 @@ a {
 }
 
 .main-header-logo {
-	display: flex;
+	position: absolute;
+	right: 530px;
 	width: 140px;
-	height: 70px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: -70px;	
+	height: 70px;	
 }
 
 
