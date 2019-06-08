@@ -86,12 +86,11 @@ a {
 
 .main-header-logo {
 	position: absolute;
-	right: 530px;
-	width: 140px;
-	height: 70px;	
+	left: 50%;
+	transform: translateX(-50%);
+	
+		
 }
-
-
 
 .sedona-reasons {
 	background-color: #ffffff;
@@ -197,6 +196,11 @@ input:hover {
 
 	color: #ffffff;
 	background-color: #81b3d2;
+}
+
+polygon {
+	width: 10%;
+	height: 10%;
 }
 
 .button-search:hover {
@@ -456,6 +460,20 @@ input {
 	background-color: #f2f2f2;
 }
 
+.button-plus {
+	background-image: url("../img/plus.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	
+}
+
+.button-minus {
+	background-image: url("../img/minus.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	
+}
+
 label {
 	display: flex;
 	flex-direction: row;
@@ -598,7 +616,7 @@ label {
 
 img {
   max-width: 100%;
-  height: auto;
+  
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -866,6 +884,7 @@ a {
 	
 }
 
+
 .hotel-info h3 {
 	padding: 0;
 	margin: 0;
@@ -948,25 +967,32 @@ ul {
 
 .footer-copyright p {
   display: block;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-right: 8px;
+  
  }
 
 .footer-copyright img {
+  display: block;
+  margin-bottom: auto;
+  margin-top: auto;
+}  
 
-	width: 115px;
-	height: 41px;
-	padding: 0;
-	margin: 0;
+.footer-copyright svg {
+  fill: #231f20;
+}  
 
 
 
-	background-color: #231f20;
-}
 
 .footer-copyright {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+
+	
 }
+
 
 
 
