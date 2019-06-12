@@ -1,6 +1,7 @@
 body {
 	background-color: #f2f2f2;
 }
+
 .wrapper {
   margin: 0;
   padding: 0;
@@ -15,7 +16,7 @@ body {
   text-transform: uppercase;
 
   
-  background: url("../img/background-photo.jpg") no-repeat top;
+  background: url("../img/background-photo.jpg") no-repeat top, url("../img/map1.jpg") no-repeat bottom;
   background-color: #ffffff;
 }
 
@@ -166,10 +167,18 @@ input[type="radio"].visually-hidden {
 .recommendations-list h3 {
   font-size: 21px;
   font-weight: 700;
+  padding: 0;
+  margin: 0;
 }
 
 .reason-1,
 .reason-2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+
 	color: #ffffff;
 	background-color: #81b3d2;	
 }
@@ -181,7 +190,7 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;	
-	padding-bottom: 55px;
+	padding-bottom: 80px;
 
 	color: #000000;
 	background-color: #ffffff;
@@ -192,7 +201,8 @@ input[type="radio"].visually-hidden {
 .recommendation {
 	display: flex;
 	flex-direction: column;
-	margin-top: 164px;
+	align-content: flex-start;
+	margin-top: 159px;
 
 	width: 304px;
 	padding-left: 48px;
@@ -204,16 +214,18 @@ input[type="radio"].visually-hidden {
 .recommendation p {
 	margin: 0;
 	padding: 0;
+
 }
 
 .recommendation h3 {
 	position: relative;
+	padding-bottom: 26px;
 }
 
 .recommendation-1 h3::before {
 	content: "";
 	position: absolute;
-	top: -107px;
+	top: -109px;
 	left: 114px;
 
 	width: 74px;
@@ -256,20 +268,221 @@ input[type="radio"].visually-hidden {
 .reason-4,
 .reason-5 {
 	background-color: #eeeeee;
-	padding: 48px;
+	padding-bottom: 38px;
 }
 
-
-
-
-
-
-
-
-.search-hotels-in-sedona,
-.button-reservation {
+.reason-wrapper {
+	width: 304px;
+	padding-top: 46px;
+	padding-left: 48px;
+	padding-right: 48px;
 	
+}
 
+.reason-wrapper h3 {	
+	margin: 0;
+	padding: 0;
+
+	padding-bottom: 24px;
+}
+
+.reason-wrapper p {
+	margin: 0;
+	padding: 0;
+
+	padding-bottom: 22px;
+}
+.reason-1 img,
+.reason-2 img {
+	display: flex;
+	width: 800px;
+	height: 256px;
+}
+
+.search {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0;
+	padding: 0;
+}
+
+.interested-block {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 52px;
+}
+
+.interested {
+	font-size: 30px;
+  	line-height: 36px;
+  	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 23px;
+	
+}
+
+.date {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 43px;
+}
+
+.button-search-hotels {
+	display: flex;
+	justify-content: space-around;
+	width: 568px;
+	height: 86px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.form-wrapper {
+	display: flex;
+	margin: 0 auto;	
+}
+
+.form-search-hotels {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #ffffff;
+	background-clip: padding-box;
+	margin: 0 auto;
+	margin-bottom: 78px;
+	box-shadow: 0 7px 15px 0 rgba(0,1,1,0.15);
+
+
+	width: 458px;
+	padding: 55px;
+}
+
+.input-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+	position: relative;
+	padding: 0;
+	margin: 0;
+
+	margin-bottom: 29px;
+}
+
+.input-wrapper label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.input-wrapper input {
+	width: 335px;
+	height: 38px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	padding-left: 12px;
+	
+}
+
+.calendar {
+	position: absolute;
+	right: 9px;
+	top: 8px;
+	fill: #cacaca;
+}
+
+.calendar:hover {
+	fill: #000000;
+	 
+}
+
+.calendar:active {
+	fill: #81b3d2; 
+}
+
+.namber-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 50%;
+	align-items: center;
+	justify-content: flex-end;
+	height: 40px;
+}
+
+.namber-of {
+	display: block;
+	width: 38px;
+	height: 38px;
+	border: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.button-plus,
+.button-minus {
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 38px;
+	background-color: #f2f2f2;
+}
+
+.button-plus {
+	font-size: 26px;
+	color: #a9a9a9;
+
+}
+
+.button-minus {
+	font-size: 30px;
+	color: #a9a9a9;
+}
+
+.number-adults,
+.number-children {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+	margin: 0;
+	padding: 0;
+}
+
+.number-adults {
+	margin-right: 3px;
+	margin-left: 40px;
+}
+
+.number-children {
+	margin-left: 27px; 
+}
+
+.button-search {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 58px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+
+	margin-top: 54px;
+}
+
+/* Выверить код ниже*/
+
+.button-search-hotels,
+.button-reservation {
 	font-size: 21px;
   	line-height: 26px;
  	font-weight: 700;
@@ -283,12 +496,12 @@ input[type="radio"].visually-hidden {
 	font-size: 14px;
 }
 
-.search-hotels-in-sedona:hover,
+.button-search-hotels:hover,
 .button-reservation:hover {
   	background-color: #604e43;
 }
 
-.search-hotels-in-sedona:active,
+.button-search-hotels:active,
 .button-reservation:active {
 	color: rgba(255,255,255,0.3);
 	background-color: #503e33;
@@ -323,11 +536,6 @@ input:hover {
 	background-color: #81b3d2;
 }
 
-.polygon {
-	width: 10%;
-	height: 10%;
-}
-
 .button-search:hover {
 	background-color: #669ec0;
 }
@@ -337,56 +545,124 @@ input:hover {
 	background-color: #5496bd;
 }
 
-.interested {
-	font-size: 30px;
-  	line-height: 36px;
-  	font-weight: 700;
-}
+/* Выверить код конец*/
 
 .main-footer {
-  color: #000000;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 36px;
+	padding-top: 36px;
 
-  background-position: bottom center;
-  background-repeat: no-repeat;
+	color: #000000;
+	background: url("../img/background-footer.png") no-repeat bottom;
 }
 
-.social-button {
-	text-decoration: none;
-	}
+ .visitsedona,
+ .hotels-name {
+ 	display: flex;
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
 
-.footer-social {
-	list-style: none;
-}
+ 	
 
-
-.button-more {
-  color: #ffffff;
-  background-color: #81b3d2;
-
-}
-
-.social-button:hover,
-.button-more:hover {
-  color: #669ec0;
-}
-
-.social-button:active,
-.button-more:active {
-	color: #5496bd;
-  color: #5496bd;
-  }
-
- .hotels-name p {
- 	color: #333333;
- }
-
- .hotels-name,
- .visitsedona {
  	font-size: 21px;
   	line-height: 26px;
  	font-weight: 700;
 
  	color: #000000;
+ }
+
+  .visitsedona {
+  	justify-content: center;
+  	margin: 0;
+  	padding: 0;
+  	flex-basis: 400px;
+ }
+
+.footer-social {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-basis: 400px;
+	
+		
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.social-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 46px;
+	height: 48px;
+	
+
+	background-color: #81b3d2;
+	text-decoration: none;
+}
+
+.footer-social li:not(:last-of-type) {
+	margin-right: 6px;
+}
+
+.social-button:hover,
+.button-more:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active,
+.button-more:active {
+	color: #5496bd;
+	color: #5496bd;
+  }
+
+.social-button:focus path {
+	fill: #88b6d1;
+}
+
+.button-more {
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+.footer-copyright {
+ 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-basis: 400px;
+	
+
+ 	margin: 0;
+	padding: 0;
+
+	font-size: 14px;
+  	line-height: 26px;
+ 	font-weight: 400;
+ }
+
+ .white_back {
+  background: url("../img/white-back.png") no-repeat center;
+  position: absolute;
+  left: 50%;
+  width: 1229px;
+  margin-left: -614.5px;
+  z-index: 2;
+
+}
+
+
+ .hotels-name p {
+ 	color: #333333;
  }
 
  .hotels-name:hover {
@@ -397,12 +673,7 @@ input:hover {
  	color: rgba(0,0,0,0.3);
  }
 
- .footer-copyright {
- 	font-size: 14px;
-  	line-height: 26px;
- 	font-weight: 400;
- }
-
+ 
  .rating {
  	background-color: #f2f2f2;
  	color: #666666;
@@ -427,218 +698,6 @@ input:hover {
  	width: 72px;
  }
  
-h1,
-h2 {
-	margin: 0;
-	padding: 0;
-}
-
-
-
-
- 
-.reason-3,
-.reason-4,
-.reason-5 {
-	width: 304px;
-	height: 166px;	
-}
-
-
-
-.search {
-	display: flex;
-	flex-direction: column;
-
-	margin: 0;
-	padding: 0;
-}
-
-.interested-block {
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 56px;
-}
-
-.interested {
-	margin: 0;
-	padding-bottom: 30px;
-	
-}
-
-.date {
-	padding-bottom: 50px;
-}
-
-.search-hotels-in-sedona {
-	width: 568px;
-	padding-bottom: 33px;
-	padding-top: 33px;
-	border: 0;
-}
-
-.form-wrapper {
-	display: flex;
-	margin: 0 auto;	
-}
-
-
-.search-hotels {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	
-
-	width: 458px;
-	padding: 55px;
-	
-}
-
-
-
-.input-wrapper {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	position: relative;
-}
-
-input {
-	
-	width: 333px;
-	height: 40px;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	padding-left: 12px;
-	
-
-	margin-bottom: 20px;
-	/*background-image: url("../img/calendar.svg");	*/
-}
-
-.calendar {
-	position: absolute;
-	right: 9px;
-	top: 8px;
-	fill: #cacaca;
-	 
-}
-
-.calendar:hover {
-	fill: #000000;
-	 
-}
-
-.calendar:active {
-	fill: #81b3d2;
-	 
-}
-
-
-
-.namber-of {
-	display: block;
-	text-align: center;
-	padding:0;
-	width: 38px;
-	height: 38px;
-
-}
-
-.button-plus,
-.button-minus {
-	display: flex;
-	justify-content: space-around;
-	padding: 0;
-	margin: 0;
-	border: 0;
-	width: 38px;
-	background-color: #f2f2f2;
-}
-
-.button-plus {
-	font-size: 26px;
-	color: #a9a9a9;
-
-}
-
-.button-minus {
-
-	font-size: 30px;
-	color: #a9a9a9;
-}
-
-
-
-label {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin: 0;
-	padding: 0;
-	margin-right: 21px;
-	margin-bottom: 20px;
-	
-
-	
-}
-
-.adults-label,
-.children-label {
-	margin-bottom: 0;
-}
-
-.namber-wrap {
-	display: flex;
-	flex-direction: row;
-	height: 40px;
-}
-
-.number-adults,
-.number-children {
-	display: flex;
-	flex-direction: row;
-	width: 114px;
-	height: 38px;
-	margin: 0;
-	padding: 0;
-	margin-right: 53px; 
-}
-
-.number-children {
-	margin-right: 0;
-}
-
-.number-adults {
-	margin-left: 20px;
-}
-
-
-.button-search {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-	height: 58px;
-	border: 0;
-	padding: 0;
-	margin: 0;
-
-	margin-top: 54px;
-	
-}
-
-.container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 auto;
-	width: 1056px;
-	margin-top: 185px;
-	padding-bottom: 36px;
-
-}
 
 .container-inner-page {
 	display: flex;
@@ -655,12 +714,6 @@ label {
 
 
 
-.footer-copyright {
-	width: 240px;
-	margin: 0;
-	padding: 0;
-}
-
 .hotels-container {
 	width: 1056px;
 	margin: 0 auto;
@@ -672,7 +725,7 @@ label {
 	list-style: none;
 
 	margin: 0;
-	padding: 0;visitsedona
+	padding: 0;
 }
 
 .hotel-wrapper {
@@ -901,63 +954,6 @@ input[type="radio"].visually-hidden {
 	background: url("../img/filter-background.jpg") no-repeat center;
 }
 
-.reason-1,
-.reason-2 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-
-	padding: 0;
-	margin: 0;
-	
-
-}
-
-.reason-wrapper {
-	width: 304px;
-	padding-top: 46px;
-	padding-left: 48px;
-	padding-right: 48px;
-}
-
-.reason-1 h3,
-.reason-2 h3,
-.reason-3 h3,
-.reason-4 h3,
-.reason-5 h3 {
-	
-	
-	margin: 0;
-	padding: 0;
-
-	padding-bottom: 24px;
-}
-
-.reason-1 h3,
-.reason-2 h3,
-.reason-1 p,
-.reason-2 p
- {
-	color: #ffffff;
-}
-
-.reason-1 p,
-.reason-2 p,
-.reason-3 p,
-.reason-4 p,
-.reason-5 p {
-	
-	margin: 0;
-	padding: 0;
-
-	padding-bottom: 24px;
-}
-.reason-1 img,
-.reason-2 img {
-	width: 800px;
-	height: 256px;
-}
-
 .hotel-wrapper {
 	height: 150px;
 	display: flex;
@@ -1036,39 +1032,9 @@ ul {
 	padding: 0;
 }
 
-.footer-social {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 150px;
-	
-	margin: 0;
-	padding: 0;
-
-	
-
-	list-style: none;
-}
-
-.social-button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 46px;
-	height: 48px;
-
-	background-color: #81b3d2;
-}
-
-.social-button:hover,
-.social-button:focus {
-  background-color: #669ec0;
-}
 
 
-.social-button:focus path {
-  fill: #88b6d1;
-}
+
 
 
 
@@ -1096,17 +1062,6 @@ ul {
 
 .footer-copyright svg:active {
   fill: #bdbbbc;
-}
-
-
-
-
-
-.footer-copyright {
-	display: flex;
-	flex-direction: row;
-
-	
 }
 
 
