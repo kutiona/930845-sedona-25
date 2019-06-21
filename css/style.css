@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
 
   
-  background-color: rgba(188, 188, 188, 0.5);
+  background-color: rgba(188, 188, 188, 0.7);
   background: url("../img/background-photo.jpg") no-repeat top, url("../img/map1.jpg") no-repeat bottom;
   background-color: #ffffff;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
@@ -125,6 +125,18 @@ input[type="radio"].visually-hidden {
 .site-navigation li:nth-child(4) {
 	margin-left: 3%;
 }
+
+.site-navigation-current {
+	color: #766357;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.map-search-hotels {
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+	}
 
 .site-navigation a {
 	display: block;
@@ -351,6 +363,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search {
+	
 	display: flex;
 	flex-direction: column;
 
@@ -393,6 +406,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-wrapper {
+	
 	display: flex;
 	margin: 0 auto;	
 }
@@ -525,19 +539,11 @@ input[type="radio"].visually-hidden {
 	outline: 0;
 }
 
-.button-plus {
+.button-plus,
+.button-minus {
 	font-size: 24px;
 	font-weight: 700;
 }
-
-.button-minus {
-	font-size: 42px;
-	line-height: 0;
-	font-weight: 400;
-	align-items: flex-end;
-}
-
-
 
 .button-plus:hover,
 .button-minus:hover {
@@ -619,6 +625,7 @@ input[type="radio"].visually-hidden {
 /* Выверить код конец*/
 
 .main-footer {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -897,7 +904,7 @@ input[type="radio"].visually-hidden {
 .filter-option {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 25px
+	margin-bottom: 25px;
 	padding-left: 42px;
 
 	font-weight: 400;
@@ -1081,7 +1088,7 @@ input[type="radio"].visually-hidden {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(225, 225, 225, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -1310,11 +1317,8 @@ align-items: baseline;
 
 }
 
-.site-navigation-current {
-	color: #766357;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
+
+
 
 
 
