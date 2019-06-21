@@ -868,7 +868,7 @@ input[type="radio"].visually-hidden {
 
 .filters {
   width: 100%;
-  margin-top: 76px;
+  margin-top: 77px;
 }
 
 .filter {
@@ -897,7 +897,7 @@ input[type="radio"].visually-hidden {
 .filter-option {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 25px;
+	margin-bottom: 25px
 	padding-left: 42px;
 
 	font-weight: 400;
@@ -928,7 +928,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
 
   position: absolute;
@@ -941,6 +941,14 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-checkbox:disabled + label::before {
+ background-image: url("../img/checkbox-off-dis.svg");
+}
+
+.filter-input-checkbox:checked:disabled + label::before {
+ background-image: url("../img/checkbox-on-dis.svg");
 }
 
 
@@ -981,8 +989,9 @@ input[type="radio"].visually-hidden {
 
 .price-controls {
   position: relative;
+
   
-  height: 36px;
+  height: 33px;
   margin-bottom: 20px;
   
   font-size: 0;
@@ -1008,16 +1017,28 @@ input[type="radio"].visually-hidden {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 21px;
+  
 
   cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+  width: 92px;
+  padding-top: 5px;
+
+   font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.price-controls .min-price {
+	padding-left: 65px;
+}
+
+.price-controls .max-price {
+	padding-left: 54px;
 }
 
 .price-controls input {
@@ -1060,12 +1081,14 @@ input[type="radio"].visually-hidden {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(225, 225, 225, 0.2);
   cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+	border: 9px solid #ffffff;
+   top: -10px;
+   margin-left: -1px;
 }
 
 .range-toggle-min {
@@ -1080,11 +1103,12 @@ input[type="radio"].visually-hidden {
   display: block;
   margin: 0;
   padding: 0;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin-left: 85px;
+  margin-right: 96px;
+  padding: 6px 34px;
 
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -1153,12 +1177,8 @@ align-items: baseline;
 }
 
 .sort-by a {
-	display: flex;
-	margin: 0;
-	padding: 0;
 	margin-left: 35px;
-	
-	align-items: center;
+		
 	color: #cacaca;
 	border-bottom: 1px dotted #81b3d2;
 }
@@ -1168,15 +1188,17 @@ align-items: baseline;
 	border-bottom: 1px dashed #81b3d2;
 }
 
-.sort-by a:active {
-	color: #000000;
-	border-bottom: 0;
-}
+
 
 .sort-by a:focus {
 	color: #81b3d2;
 	border-bottom: 0;
 	outline: 0;
+}
+
+.sort-by a:active {
+	color: #000000;
+	border-bottom: 0;
 }
 
 .results {
