@@ -90,16 +90,15 @@
 					<div class="interested-block">
 						<p class="interested">Заинтересовались?</p>
 						<p class="date">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-						<button class="button-search-hotels">Поиск гостиницы в Седоне</button>
+						<button class="button-search-hotels" type="submit">Поиск гостиницы в Седоне</button>
 					</div>
 
 					<div class="form-wrapper">
-
-						<form class="form-search-hotels">
+						<form class="form-search-hotels" action="https://echo.htmlacademy.ru" method="get">
 							<div class="input-wrapper">
 								<label for="arrival-date-input">Дата заезда:</label>
-								<input type="text" name="arrival-date" id="arrival-date-input" value="24 апреля 2017" >
-								<button class="calendar">
+								<input type="text" name="arrival-date" id="arrival-date-input" value="" placeholder="24 апреля 2017">
+								<button class="calendar" type="button">
 									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
 		<g>
@@ -125,8 +124,8 @@
 							</div>
 							<div class="input-wrapper">				
 								<label for="date-of-departure-input">Дата выезда:</label>
-								<input type="text" name="date-of-departure" id="date-of-departure-input" value="4 июля 2017">
-								<button class="calendar">
+								<input type="text" name="date-of-departure" id="date-of-departure-input" value="" placeholder="4 июля 2017">
+								<button class="calendar" type="button">
 									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
 		<g>
@@ -153,26 +152,27 @@
 							<div class="namber-wrap">
 								<label class="adults-label" for="adults-input">Взрослые:</label>
 								<div class="number-adults">
-									<button class="button-minus" name="minus">–</button>
+									<button class="button-minus" type="button" name="minus">–</button>
 									<input type="text" class="namber-of" name="adults" id="adults-input" value="2">
-									<button class="button-plus" name="plus">+</button>
+									<button class="button-plus" type="button" name="plus">+</button>
 								</div>
 							</div>
 							<div class="namber-wrap">
 								<label class="children-label" for="children-input">Дети:</label>
 									<div class="number-children">
-										<button class="button-minus" name="minus">–</button>
+										<button class="button-minus" type="button" name="minus">–</button>
 										<input type="text" class="namber-of" name="children" id="children-input" value="0">
-										<button class="button-plus" name="plus">+</button>
+										<button class="button-plus" type="button" name="plus">+</button>
 									</div>
 							</div>						
 							<button class="button-search" type="submit">Найти</button>
 						</form>
+						<img src="img/map1.jpg" class="map-search-hotels" width="1200" alt="Поск гостиницы на карте">
 					</div>
 				</section>
 			</main>
 			<footer class="main-footer">
-				<img src="img/map1.jpg" class="map-search-hotels" width="1200" alt="Поск гостиницы на карте">
+				
 				<div class="visitsedona">#visitSEDONA
 				</div>
 				<ul class="footer-social">
