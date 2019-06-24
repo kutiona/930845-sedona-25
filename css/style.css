@@ -959,7 +959,7 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox:checked:focus + label::before,
 .filter-input-checkbox:checked:disabled:focus + label::before,
 .filter-input-checkbox:disabled:focus + label::before {
-	outline: 2px solid #3773bf;
+	outline: 2px solid #3e93ff;
 }
 
 .filter legend {
@@ -1139,9 +1139,10 @@ input[type="radio"].visually-hidden {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	position: relative;
 	
 
-	padding: 29px 72px;
+	padding: 30px 72px;
 	background-color: #ffffff;
 	border-bottom: solid 1px #e5e5e5;
 }
@@ -1152,24 +1153,38 @@ flex-direction: row;
 align-items: baseline;
 }
 
-.results ul {
+.results h3 {
+	font-size: 21px;
+	line-height: 26px;
+	margin: 0;
+}
+
+.results h4,
+.sort-by a {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	margin: 0;
+}
+
+.results h4 {
+	margin-right: 6px;
+}
+
+.results .sorting {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	padding: 0;
+	margin: 0;
 }
 
 .found {
-	width: 165px;
+	width: 59px;
 	list-style: none;
 
 	font-size: 21px;
 	line-height: 26px;
-	margin: 0;
-
-}
-
-.found li {
 	margin: 0;
 	padding: 0;
 	margin-left: 6px;
@@ -1188,7 +1203,7 @@ align-items: baseline;
 }
 
 .sort-by a {
-	margin-left: 35px;
+	margin-left: 33px;
 		
 	color: #cacaca;
 	border-bottom: 1px dotted #81b3d2;
@@ -1199,8 +1214,6 @@ align-items: baseline;
 	border-bottom: 1px dashed #81b3d2;
 }
 
-
-
 .sort-by a:focus {
 	color: #81b3d2;
 	border-bottom: 0;
@@ -1210,11 +1223,6 @@ align-items: baseline;
 .sort-by a:active {
 	color: #000000;
 	border-bottom: 0;
-}
-
-.results {
-	position: relative;
-	
 }
 
 .icon-dir {
