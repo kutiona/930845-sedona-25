@@ -222,6 +222,8 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
+	position: relative;
+	z-index: 1;
 
 
 	list-style: none;
@@ -368,12 +370,15 @@ input[type="radio"].visually-hidden {
 	min-height: 291px;
 	margin: 0;
 	padding: 0;
+	
 }
 
 .interested-block {
+	position: relative;
+	z-index: 1;
 	margin: 0 auto;
 	text-align: center;
-	margin-top: 50px;
+	padding-top: 50px;
 	background-color: #ffffff;
 }
 
@@ -397,7 +402,6 @@ input[type="radio"].visually-hidden {
 .button-search-hotels {
 	display: flex;
 	justify-content: space-around;
-	
 	width: 568px;
 	height: 86px;
 	border: 0;
@@ -409,7 +413,6 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	z-index: 1;
 	overflow: hidden;
 	position: absolute;
 	left: 50%;
@@ -425,14 +428,13 @@ input[type="radio"].visually-hidden {
 	animation-name: bounce;
 	animation-duration: 1s;
 
-
 	width: 458px;
 	padding: 55px;	
 }
 
 @keyframes bounce {
-0% { transform: translateY(-395px);}
-100% {transform: translateY(0);}
+0% { transform: translate(-50%,-100%);}
+100% {transform: translate(-50%,0%);}
 }
 
 
