@@ -367,7 +367,6 @@ input[type="radio"].visually-hidden {
 }
 
 .search {
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	min-height: 884px;
@@ -376,7 +375,7 @@ input[type="radio"].visually-hidden {
 }
 
 .interested-block {
-	
+	position: relative;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 50px;
@@ -416,11 +415,13 @@ input[type="radio"].visually-hidden {
 	flex-direction: row;
 	flex-wrap: wrap;
 	z-index: 1;
-	
+	height: 0;
+	overflow: hidden;
 	position: absolute;
 	left: 50%;
-	top: 291px;
+	
 	transform: translateX(-50%);
+	top: 100%;
 	justify-content: space-between;
 	background-color: #ffffff;
 	background-clip: padding-box;
@@ -441,8 +442,8 @@ input[type="radio"].visually-hidden {
 }
 
 
-.form-not-show {
-	display: none;
+.form-show {
+	display: flex;
 }
 
 .input-wrapper {
@@ -606,6 +607,7 @@ input[type="radio"].visually-hidden {
 /* Выверить код ниже*/
 
 .button-search-hotels {
+
 	font-size: 21px;
   	line-height: 26px;
  	font-weight: 700;
