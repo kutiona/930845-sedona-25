@@ -93,7 +93,7 @@
 						<button class="button-search-hotels" type="submit">Поиск гостиницы в Седоне</button>
 					</div>
 
-					<div class="form-wrapper">
+					
 						<form class="form-search-hotels" action="https://echo.htmlacademy.ru" method="get">
 							<div class="input-wrapper">
 								<label for="arrival-date-input">Дата заезда:</label>
@@ -168,7 +168,7 @@
 							<button class="button-search" type="submit">Найти</button>
 						</form>
 						<img src="img/map1.jpg" class="map-search-hotels" width="1200" alt="Поск гостиницы на карте">
-					</div>
+					
 				</section>
 			</main>
 			<footer class="main-footer">
@@ -189,5 +189,15 @@
 				</div>
 			</footer>
 		</div>
+		<script>
+			var search = document.querySelector(".button-search-hotels");
+
+			var form = document.querySelector(".form-search-hotels");
+
+			search.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				form.classList.toggle("form-not-show");
+  			});
+		</script>
 	</body>
 </html>

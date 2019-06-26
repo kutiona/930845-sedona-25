@@ -30,7 +30,6 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -79,6 +78,12 @@ input[type="radio"].visually-hidden {
 	max-width: 1200px;
 	background-color: #ffffff;
 }
+
+.main-navigation a {
+	padding: 0;
+	margin: 0;
+}
+
 
 .site-navigation {
   display: flex;
@@ -134,9 +139,8 @@ input[type="radio"].visually-hidden {
 
 .map-search-hotels {
 	position: absolute;
-	bottom: 0;
-	
-	}
+	top: 291px;
+}
 
 .site-navigation a {
 	display: block;
@@ -363,15 +367,16 @@ input[type="radio"].visually-hidden {
 }
 
 .search {
-	
+	position: relative;
 	display: flex;
 	flex-direction: column;
-
+	min-height: 884px;
 	margin: 0;
 	padding: 0;
 }
 
 .interested-block {
+	
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 50px;
@@ -398,6 +403,7 @@ input[type="radio"].visually-hidden {
 .button-search-hotels {
 	display: flex;
 	justify-content: space-around;
+	
 	width: 568px;
 	height: 86px;
 	border: 0;
@@ -405,27 +411,38 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 }
 
-.form-wrapper {
-	position: relative;
-	display: flex;
-	padding-bottom: 120px;
-}
-
 .form-search-hotels {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	z-index: 1;
+	
+	position: absolute;
+	left: 50%;
+	top: 291px;
+	transform: translateX(-50%);
 	justify-content: space-between;
 	background-color: #ffffff;
 	background-clip: padding-box;
 	margin: 0 auto;
 	margin-bottom: 78px;
 	box-shadow: 0 7px 15px 0 rgba(0,1,1,0.15);
+	animation-name: bounce;
+	animation-duration: 3s;
 
 
 	width: 458px;
-	padding: 55px;
+	padding: 55px;	
+}
+
+@keyframes bounce {
+0% { height: 0px;}
+100% { height: 285px;}
+}
+
+
+.form-not-show {
+	display: none;
 }
 
 .input-wrapper {
