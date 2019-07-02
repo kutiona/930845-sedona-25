@@ -376,6 +376,7 @@ input[type="radio"].visually-hidden {
 .interested-block {
 	position: relative;
 	z-index: 1;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	padding-top: 50px;
@@ -407,6 +408,7 @@ input[type="radio"].visually-hidden {
 	border: 0;
 	padding: 0;
 	margin: 0;
+	margin: 0 auto;
 }
 
 .form-search-hotels {
@@ -440,6 +442,12 @@ input[type="radio"].visually-hidden {
 
 .form-show {
 	display: flex;
+}
+
+.map-search  img {
+	display: block;
+	padding: 0;
+	margin: 0;
 }
 
 .input-wrapper {
@@ -658,13 +666,6 @@ input[type="radio"].visually-hidden {
 
  .visitsedona,
  .hotels-name {
- 	display: flex;
- 	flex-direction: row;
- 	flex-wrap: wrap;
- 	align-items: flex-start;
-
- 	
-
  	font-size: 21px;
   	line-height: 26px;
  	font-weight: 700;
@@ -678,7 +679,7 @@ input[type="radio"].visually-hidden {
  	
  }
   .visitsedona {
-  	justify-content: center;
+  	text-align: center;
   	margin: 0;
   	padding: 0;
   	flex-basis: 400px;
