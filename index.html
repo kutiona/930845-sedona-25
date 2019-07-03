@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
   	  	<div class="wrapper">
@@ -23,7 +23,7 @@
 			<main>
 				<h1 class="visually-hidden">Седонa - город в Аризоне</h1>
 				<div class="welcome">
-					<img src="img/welcome.png" class="welcome-title" alt="Добро пожаловать">		
+					<img src="img/welcome.png" class="welcome-title" width="459" height="353" alt="Добро пожаловать">		
 				</div>
 				<div class="sedona-reasons">
 					<p class="sedona">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
@@ -38,7 +38,7 @@
 							<p>— №1 —</p>			
 							<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 						</div>
-						<img src="img/real-town.jpg" alt="Настоящий городок">
+						<img src="img/real-town.jpg" width="800" height="256" alt="Настоящий городок">
 							<ul class="recommendations-list">
 								<li class="recommendation recommendation-1">
 									<h3>Жилье</h3>
@@ -55,7 +55,7 @@
 							</ul>
 						</li>
 						<li class="reason-2">
-							<img src="img/devils-bridge.jpg" alt="Мост дьявола" width="800" height="256">
+							<img src="img/devils-bridge.jpg" width="800" height="256" alt="Мост дьявола" width="800" height="256">
 							<div class="reason-wrapper">
 								<h3>Там есть<br> Мост дьявола</h3>
 								<p>— №2 —</p>
@@ -169,7 +169,8 @@
 						</form>					
 				</section>
 				<section class="map-search">
-				<img src="img/map1.jpg" class="map-search-hotels" width="1200" alt="Поск гостиницы на карте">
+					<h2 class="visually-hidden">Поиск гостиницы на карте</h2>
+					<img src="img/map1.jpg" class="map-search-hotels" width="1200" height="593" alt="Поск гостиницы на карте">
 				</section>
 			</main>
 			<footer class="main-footer">
@@ -190,25 +191,6 @@
 				</div>
 			</footer>
 		</div>
-		<script>
-			var search = document.querySelector(".button-search-hotels");
-			var form = document.querySelector(".form-search-hotels");
-			var arrival = form.querySelector("#arrival-date-input");
-			var departure = form.querySelector("#date-of-departure-input");
-			
-
-			search.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				form.classList.toggle("form-show");
-			});
-
-			form.addEventListener("submit", function (evt) {
- 			   if (!arrival.value || !departure.value) {
- 			     evt.preventDefault();
-  			    console.log("Нужно дату заезда и выезда");
-  			  }
-			  });
-
-		</script>
+		<script src="js/script.min.js"></script>
 	</body>
 </html>
