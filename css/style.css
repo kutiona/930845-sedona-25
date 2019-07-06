@@ -162,11 +162,11 @@ input[type="radio"].visually-hidden {
 
 .welcome {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   margin-top: 76px;
   padding-bottom: 79px;
-	
+
+  background-color: #dceaf3;	
   background: url("../img/polygon.svg") no-repeat bottom;
 }
 
@@ -192,6 +192,8 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   margin: 0;	
   margin-bottom: 31px;
+  padding-right: 312px;
+  padding-left: 312px;
 }
 
 .five-reasons {
@@ -332,6 +334,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-bottom: 24px;
+  padding-right: 77px;
+  padding-left: 76px;
 }
 
 .reason-wrapper p {
@@ -384,7 +388,8 @@ input[type="radio"].visually-hidden {
 
 .button-search-hotels {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   width: 568px;
   height: 86px;
   border: 0;
@@ -570,7 +575,6 @@ input[type="radio"].visually-hidden {
 }
 
 .button-search {
-  display: flex;
   justify-content: space-around;
   width: 100%;
   height: 58px;
@@ -787,6 +791,7 @@ input[type="radio"].visually-hidden {
   padding-left: 72px;
   padding-right: 72px;
   border-bottom: solid 1px #e5e5e5;
+  overflow: auto;
 }
 
 .button-more {
@@ -983,6 +988,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
 
   font-size: 14px;
   line-height: 21px;
@@ -1194,22 +1200,26 @@ input[type="radio"].visually-hidden {
   margin-left: 12px;
 }
 
-.icon-up-down-dir path {
+.icon-up-down-dir a path {
   fill: #cacaca;
 }
 
-.icon-up-down-dir:hover path {
+.icon-up-down-dir a:hover path {
   fill: #000000;
 }
 
-.icon-up-down-dir:active path {
-  fill: #81b3d2
+.icon-up-down-dir a:active path {
+  fill: #81b3d2;
+}
+
+.icon-up-down-dir a:focus path {
+  fill: #81b3d2;
 }
 
 .preview {
   display: block;
-  width: 135px;
-  height: 90px;
+  min-width: 135px;
+  min-height: 90px;
   padding: 0;
   margin: 0;
   border: 0;
@@ -1227,12 +1237,14 @@ input[type="radio"].visually-hidden {
   margin-left: 30px;
 
   font-weight: 400;
+  height: 1px;
 }
 
 
 .hotel-info h3,
 .hotel-info p {
   padding: 0;
+  padding-bottom: 8px;
   margin: 0;
   margin-top: -5px;
 }
@@ -1271,4 +1283,5 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   padding: 0;
   margin: 0;
+  height: 1px;
 }
